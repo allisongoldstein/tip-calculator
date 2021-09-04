@@ -26,26 +26,25 @@ class ViewController: UIViewController {
         billAmountTextField.becomeFirstResponder()
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.billAmountTextField.resignFirstResponder()
-    }
+    //override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    //    self.billAmountTextField.resignFirstResponder()
+    //}
     
     var userInput = Double(0)
     var tip = Double(0)
     var percentSelected = false
     var splitSelected = false
     
+    
     @IBAction func updateTotalBill(_ sender: Any) {
+        userInput = Double(billAmountTextField.text!) ?? 0
+        
         if percentSelected {
             calculateTip(UITextField.self)
         }
-        
-        userInput = Double(billAmountTextField.text!) ?? 0
-        billAmountTextField.text = String(format: "$%.2f", userInput)
     }
     
     @IBAction func calculateTip(_ sender: Any) {
-        self.billAmountTextField.resignFirstResponder()
         
         // Round slider value
         let sliderPercent = Double(round(tipSlider.value))

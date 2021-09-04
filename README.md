@@ -22,13 +22,14 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] User can select tip percentage via slider
+- [X] User has option to split tip between 2-4 people
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/QDOC62z.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -38,7 +39,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2021 Allison Goldstein
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
